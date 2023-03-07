@@ -12,26 +12,26 @@
 <link href="https://fonts.googleapis.com/css2?family=Ephesis&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="index.css">
 </head>
-<header>
-  <h1><b>Midwest Dental Consulting</b></h1>
-  <p>Dental and Patient Billing Service</p>
+<header class="logo">
+  <h1 style="color: #344e41; font-size: 80px; font-family: 'Ephesis', cursive; ">Midwest Dental Consulting <span style="font-size: 20px; font-family:Verdana, Geneva, Tahoma, sans-serif,sans-serif">Dental and Patient Billing Service</span></h1>
+ 
 </header>
 <body>
 
   <div class="navbar">
-    <div class="logo" style="color: #344e41; font-size: 80px; font-family: 'Ephesis', cursive; ">Midwest Dental Consulting <br><h6 style="font-weight: 500; font-size: 20px; ">Helping to refocus on what matters most to you</h6></div>
-   
     <div class="navbar-right">
       <a  href="#">Home</a>
       <a href="#pricing">Pricing</a>
       <a href="#about">About</a>
       <a href="#contact" >Contact</a>
     </div>
-    
   </div>
-
+ 
+  <div class="mdc-center">
+    <span class="mdc-xlarge">Helping to refocus on what matters most to you</span>
+  </div>
 <!-- Content -->
-<div class="mdc-content" style="max-width:1100px;margin-top:160px;margin-bottom:80px">
+<div class="mdc-content" style="max-width:1100px;margin-top:20px;margin-bottom:80px">
 
   <!-- Grid -->
   <div class="mdc-row mdc-c-ontainer">
@@ -246,18 +246,7 @@
 
 
 <script>
-  // When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
-window.onscroll = function() {scrollFunction()};
 
-function scrollFunction() {
-  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-    document.getElementByClass("navbar").style.padding = "30px 10px";
-    document.getElementByClass("logo").style.fontSize = "25px";
-  } else {
-    document.getElementByClass("navbar").style.padding = "80px 10px";
-    document.getElementByClass("logo").style.fontSize = "35px";
-  }
-}
 // Slideshow
 var slideIndex = 1;
 showDivs(slideIndex);
