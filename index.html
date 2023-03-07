@@ -7,71 +7,32 @@
 
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ephesis&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="index.css">
 </head>
+<header>
+  <h1><b>Midwest Dental Consulting</b></h1>
+  <p>Dental and Patient Billing Service</p>
+</header>
 <body>
 
-<!-- Links (sit on top) -->
-<div class="mdc-top">
-  <div class="mdc-row mdc-large" style="background-color: #dad7cd">
-    <div class="mdc-col s3">
-      <a href="#" class="mdc-button mdc-block">Home</a>
+  <div class="navbar">
+    <div class="logo" style="color: #344e41; font-size: 80px; font-family: 'Ephesis', cursive; ">Midwest Dental Consulting <br><h6 style="font-weight: 500; font-size: 20px; ">Helping to refocus on what matters most to you</h6></div>
+   
+    <div class="navbar-right">
+      <a  href="#">Home</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#about">About</a>
+      <a href="#contact" >Contact</a>
     </div>
-    <div class="mdc-col s3">
-      <a href="#pricing" class="mdc-button mdc-block">Pricing</a>
-    </div>
-    <div class="mdc-col s3">
-      <a href="#about" class="mdc-button mdc-block">About</a>
-    </div>
-    <div class="mdc-col s3">
-      <a href="#contact" class="mdc-button mdc-block">Contact</a>
-    </div>
+    
   </div>
-</div>
 
 <!-- Content -->
-<div class="mdc-content" style="max-width:1100px;margin-top:80px;margin-bottom:80px">
+<div class="mdc-content" style="max-width:1100px;margin-top:160px;margin-bottom:80px">
 
-  <div class="mdc-panel">
-    <h1><b>Midwest Dental Consulting</b></h1>
-    <p>Dental and Patient Billing Service</p>
-    <p>Helping to refocus on what matters most to you</p>
-  </div>
-
- 
-  <div class="mdc-container" >
-    <div class="mdc-display-container mySlides">
-      <img src="./images/fish.jpg" style="width: 100%; height: 400px;" >
-      <div class="mdc-display-topleft mdc-container mdc-padding-32">
-        <span class="mdc-white mdc-padding-large mdc-animate-bottom">Your Joy</span>
-      </div>
-    </div>
-    <div class="mdc-display-container mySlides">
-      <img src="./images/family.jpg" style="width:100%; height: 400px;">
-      <div class="mdc-display-middle mdc-container mdc-padding-32">
-        <span class="mdc-white mdc-padding-large mdc-animate-bottom">Your Life</span>
-      </div>
-    </div>
-    <div class="mdc-display-container mySlides">
-      <img src="./images/friend.jpg" style="width:100%; height: 400px;">
-      <div class="mdc-display-topright mdc-container mdc-padding-32">
-        <span class="mdc-white mdc-padding-large mdc-animate-bottom">Your Time</span>
-      </div>
-    </div> 
-
-    <!--Slideshow next/previous buttons--> 
-    <div class="mdc-container mdc-padding mdc-xlarge" style="background-color: #588157; color: white;" >
-      <div class="mdc-left" onclick="plusDivs(-1)"><i class="fa fa-arrow-circle-left mdc-hover-text-green"></i></div>
-      <div class="mdc-right" onclick="plusDivs(1)"><i class="fa fa-arrow-circle-right mdc-hover-text-green"></i></div>
-    
-      <div class="mdc-center">
-        <span class="mdc-tag demodots mdc-border mdc-transparent mdc-hover-white" onclick="currentDiv(1)"></span>
-        <span class="mdc-tag demodots mdc-border mdc-transparent mdc-hover-white" onclick="currentDiv(2)"></span>
-        <span class="mdc-tag demodots mdc-border mdc-transparent mdc-hover-white" onclick="currentDiv(3)"></span>
-      </div>
-    </div>
-  </div> 
-  
   <!-- Grid -->
   <div class="mdc-row mdc-c-ontainer">
     <div class="mdc-center mdc-padding-64">
@@ -79,17 +40,17 @@
     </div>
     <div class="mdc-col l3 m6 mdc-container mdc-padding-16" style="background-color: #a3b18a ;">
       <h3>Increase Revenue</h3>
-      <p>We collect 100% that is owed to your practice</p>
+      <p>We collect 100% that is owed to your practice. </p>
     </div>
 
     <div class="mdc-col l3 m6 mdc-container mdc-padding-16" style="background-color: #588157;">
       <h3>Assistant to your Staff</h3>
-      <p>Free your staff to deliver excellent patient services.</p>
+      <p>Free your staff to deliver excellent patient services. </p>
     </div>
 
     <div class="mdc-col l3 m6 mdc-container mdc-padding-16" style="background-color: #3a5a40; color: white;">
       <h3>No time off</h3>
-      <p>We work whether your office is open or closed</p>
+      <p>We work whether your office is open or closed </p>
     </div>
 
     <div class="mdc-col l3 m6 mdc-container mdc-padding-16" style="background-color: #344e41; color: white;">
@@ -252,7 +213,7 @@
     <span class="mdc-xlarge mdc-bottombar mdc-border-dark-grey mdc-padding-16">Contact Us</span>
   </div>
 
-  <form class="mdc-container" action="https://formsubmit.co/midwestdentalconsulting@gmail.com" method="POST">
+  <form class="mdc-container" action="https://formsubmit.co/f8bb97116566734dc49fef5aeceee690" method="POST">
     <div class="mdc-section">
       <label>Name</label>
       <input class="mdc-input mdc-border mdc-hover-border-black" style="width:100%;" type="text" name="Name" required>
@@ -285,6 +246,18 @@
 
 
 <script>
+  // When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+    document.getElementByClass("navbar").style.padding = "30px 10px";
+    document.getElementByClass("logo").style.fontSize = "25px";
+  } else {
+    document.getElementByClass("navbar").style.padding = "80px 10px";
+    document.getElementByClass("logo").style.fontSize = "35px";
+  }
+}
 // Slideshow
 var slideIndex = 1;
 showDivs(slideIndex);
@@ -312,6 +285,7 @@ function showDivs(n) {
   x[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " mdc-white";
 }
+
 </script>
 
 </body>

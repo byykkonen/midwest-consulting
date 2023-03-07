@@ -17,14 +17,63 @@ html,body,h1,h2,h3,h4 {
     margin-top: 6px;
 }
 
+.navbar {
+overflow: hidden;
+  background-color: #dad7cd;
+  padding: 30px 10px; /* Large padding which will shrink on scroll (using JS) */
+  transition: 0.4s; /* Adds a transition effect when the padding is decreased */
+  position: fixed; /* Sticky/fixed navbar */
+  width: 100%;
+  top: 0; /* At the top */
+  z-index: 99;
+}
 
+.navbar .logo {
+    font-size: 35px;
+    font-weight: bold;
+    transition: 0.4s;
+  }
+.navbar a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+}
+
+.navbar a:hover {
+    background-color: #a3b18a;
+    color: white;
+}
+
+
+
+.navbar-right {
+    float: right;
+}
+
+@media screen and (max-width: 580px) {
+    avbar {
+      padding: 20px 10px !important; /* Use !important to make sure that JavaScript doesn't override the padding on small screens */
+    }
+    .navbar a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    .navbar-right {
+      float: none;
+    }
+  }
 html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}
 
 html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}
-article,aside,details,figcaption,figure,footer,header,main,menu,nav,section{display:block}summary{display:list-item}
+article,aside,details,figure,footer,header,main,menu,section{display:block}summary{display:list-item}
 audio,canvas,progress,video{display:inline-block}progress{vertical-align:baseline}
 audio:not([controls]){display:none;height:0}[hidden],template{display:none}
-a{background-color:transparent}a:active,a:hover{outline-width:0}
 abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}
 b,strong{font-weight:bolder}dfn{font-style:italic}mark{background:#ff0;color:#000}
 small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}
@@ -35,7 +84,6 @@ button,input{overflow:visible}button,select{text-transform:none}
 button,[type=button],[type=reset],[type=submit]{-webkit-appearance:button}
 button::-moz-focus-inner,[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner{border-style:none;padding:0}
 button:-moz-focusring,[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring{outline:1px dotted ButtonText}
-fieldset{border:1px solid #c0c0c0;margin:0 2px;padding:.35em .625em .75em}
 legend{color:inherit;display:table;max-width:100%;padding:0;white-space:normal}textarea{overflow:auto}
 [type=checkbox],[type=radio]{padding:0}
 [type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}
@@ -48,13 +96,8 @@ h1{font-size:36px}h2{font-size:30px}h3{font-size:24px}h4{font-size:20px}h5{font-
 .mdc-serif{font-family:serif}.mdc-sans-serif{font-family:sans-serif}.mdc-cursive{font-family:cursive}.mdc-monospace{font-family:monospace}
 h1,h2,h3,h4,h5,h6{font-family:"Segoe UI",Arial,sans-serif;font-weight:400;margin:10px 0}.mdc-wide{letter-spacing:4px}
 hr{border:0;border-top:1px solid #eee;margin:20px 0}
-.mdc-image{max-width:100%;height:auto}img{vertical-align:middle}a{color:inherit}
-.mdc-table,.mdc-table-all{border-collapse:collapse;border-spacing:0;width:100%;display:table}.mdc-table-all{border:1px solid #ccc}
-.mdc-bordered tr,.mdc-table-all tr{border-bottom:1px solid #ddd}.mdc-striped tbody tr:nth-child(even){background-color:#f1f1f1}
-.mdc-table-all tr:nth-child(odd){background-color:#fff}.mdc-table-all tr:nth-child(even){background-color:#f1f1f1}
+.mdc-image{max-width:100%;height:auto}img{vertical-align:middle}
 .mdc-hoverable tbody tr:hover,.mdc-ul.mdc-hoverable li:hover{background-color:#ccc}.mdc-centered tr th,.mdc-centered tr td{text-align:center}
-.mdc-table td,.mdc-table th,.mdc-table-all td,.mdc-table-all th{padding:8px 8px;display:table-cell;text-align:left;vertical-align:top}
-.mdc-table th:first-child,.mdc-table td:first-child,.mdc-table-all th:first-child,.mdc-table-all td:first-child{padding-left:16px}
 .mdc-btn,.mdc-button{border:none;display:inline-block;padding:8px 16px;vertical-align:middle;overflow:hidden;text-decoration:none;color:inherit;background-color:inherit;text-align:center;cursor:pointer;white-space:nowrap}
 .mdc-btn:hover{box-shadow:0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19)}
 .mdc-btn,.mdc-button{-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}   
@@ -89,7 +132,7 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 @media (min-width:601px){.mdc-col.m1{width:8.33333%}.mdc-col.m2{width:16.66666%}.mdc-col.m3,.mdc-quarter{width:24.99999%}.mdc-col.m4,.mdc-third{width:33.33333%}
 .mdc-col.m5{width:41.66666%}.mdc-col.m6,.mdc-half{width:49.99999%}.mdc-col.m7{width:58.33333%}.mdc-col.m8,.mdc-twothird{width:66.66666%}
 .mdc-col.m9,.mdc-threequarter{width:74.99999%}.mdc-col.m10{width:83.33333%}.mdc-col.m11{width:91.66666%}.mdc-col.m12{width:99.99999%}}
-@media (min-width:993px){.mdc-col.l1{width:8.33333%}.mdc-col.l2{width:16.66666%}.mdc-col.l3{width:24.99999%}.mdc-col.l4{width:33.33333%}
+@media (min-width:993px){.mdc-col.l1{width:8.33333%}.mdc-col.l2{width:16.66666%}.mdc-col.l3{width:25%}.mdc-col.l4{width:33.33333%}
 .mdc-col.l5{width:41.66666%}.mdc-col.l6{width:49.99999%}.mdc-col.l7{width:58.33333%}.mdc-col.l8{width:66.66666%}
 .mdc-col.l9{width:74.99999%}.mdc-col.l10{width:83.33333%}.mdc-col.l11{width:91.66666%}.mdc-col.l12{width:99.99999%}}
 .mdc-rest{overflow:hidden}.mdc-stretch{margin-left:-16px;margin-right:-16px}
@@ -126,7 +169,7 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .mdc-codespan{color:crimson;background-color:#f1f1f1;padding-left:4px;padding-right:4px;font-size:110%}
 .mdc-card,.mdc-card-2{box-shadow:0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)}
 .mdc-card-4,.mdc-hover-shadow:hover{box-shadow:0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19)}
-.mdc-spin{animation.mdc-spin 2s infinite linear}@keyframes.mdc-spin{0%{transform:rotate(0deg)}100%{transform:rotate(359deg)}}
+
 .mdc-animate-fading{animation:fading 10s infinite}@keyframes fading{0%{opacity:0}50%{opacity:1}100%{opacity:0}}
 .mdc-animate-opacity{animation:opac 0.8s}@keyframes opac{from{opacity:0} to{opacity:1}}
 .mdc-animate-top{position:relative;animation:animatetop 0.4s}@keyframes animatetop{from{top:-300px;opacity:0} to{top:0;opacity:1}}
