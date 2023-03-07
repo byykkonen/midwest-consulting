@@ -19,7 +19,7 @@ html,body,h1,h2,h3,h4 {
 
 .navbar {
   overflow: hidden;
-  background-color: #dad7cd;
+  background-color: #a3b18a;
 
 }
 
@@ -42,8 +42,8 @@ html,body,h1,h2,h3,h4 {
 }
 
 .navbar a:hover {
-    background-color: #a3b18a;
-    color: white;
+    background-color: lightgrey;
+    color: black;
 }
 
 
