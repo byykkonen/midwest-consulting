@@ -167,6 +167,31 @@ backdrop-filter: blur(20px);
       float: none;
     }
   }
+
+  @media screen and (max-width: 453px) {
+    .mdc-logo-tag {
+      font-size: 12px;
+      padding: 1px;
+      
+    }
+
+    }
+
+  @media screen and (max-width: 385px) {
+    .logo-h1 {
+      font-size: 20px;
+      width: 70%;
+      top: 70px;
+      left: 20px;
+    }
+  
+    .mdc-logo-tag {
+      font-size: 10px;
+      padding: 1px;
+      
+    }
+
+    }
 html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}
 
 html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}
