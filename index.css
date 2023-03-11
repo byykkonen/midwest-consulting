@@ -1,14 +1,49 @@
 html,body,h1,h2,h3,h4 {
     font-family:"Lato", sans-serif;
 }
-.mySlides {
-    display: none;
-    
+
+.logo {
+
+  height: 400px;
+  margin: auto;
+  padding: 30px;
+  background-image: url(./images/dentist1.jpg);
+  background-size: cover;
+
+    /* Workaround for some mobile browsers */
+    min-height: 100%;
+ 
+
 }
 
+.logo-h1 {
+  position: absolute;
+  color: black;
+  font-size: 70px;
+  font-family: 'Ephesis', cursive;
+  width: 60%;
+  margin-top: -60px;
+}
+
+.mdc-logo-tagline {
+  position: absolute;
+    top: 320px;
+    left: 25%;
+}
+
+.mdc-logo-tag {
+  color: white;
+  font-size: 30px;
+  padding: 10px;
+  background: rgba(41, 40, 40, 0.5);
+backdrop-filter: blur(20px);
+  border-radius: 15px;
+
+}
 .mdc-tag, .fa {
     cursor: pointer;
 }
+
 
 .mdc-tag {
     height: 15px;
@@ -19,7 +54,7 @@ html,body,h1,h2,h3,h4 {
 
 .navbar {
   overflow: hidden;
-  background-color: #a3b18a;
+
 
 }
 
@@ -42,8 +77,9 @@ html,body,h1,h2,h3,h4 {
 }
 
 .navbar a:hover {
-    background-color: lightgrey;
-    color: black;
+    background-color: black;
+    color: white;
+    border-radius: 15px;
 }
 
 
@@ -52,8 +88,67 @@ html,body,h1,h2,h3,h4 {
     float: right;
 }
 
+@media screen and (max-width: 977px) {
+  .mdc-logo-tag {
+    font-size: 20px;
+  }
+  .logo-h1 {
+    font-size: 35px;
+  }
+}
 
-@media screen and (max-width: 580px) {
+
+@media screen and (max-width: 650px) {
+  .logo-h1 {
+    font-size: 40px;
+    width: 70%;
+    
+    top: 70px;
+    left: 20px;
+  }
+  .mdc-logo-tag {
+    font-size: 10px;
+  }
+
+
+    .navbar {
+      margin-top: 5px;
+      padding: 20px 10px !important; /* Use !important to make sure that JavaScript doesn't override the padding on small screens */
+    }
+    .navbar a {
+      float: none;
+      display: block;
+      text-align: left;
+      background-color: white;
+    color: black;
+    border-radius: 15px;
+    width: 90px;
+    height: 45px;
+    margin: 1px;
+    }
+    .navbar-right {
+      float: none;
+    }
+  }
+
+  
+@media screen and (max-width: 515px) {
+  .logo-h1 {
+    font-size: 30px;
+    width: 70%;
+  
+    top: 70px;
+    left: 20px;
+    
+  }
+
+
+
+  .mdc-logo-tag {
+    font-size: 14px;
+    padding: 1px;
+    
+  }
     .navbar {
       padding: 20px 10px !important; /* Use !important to make sure that JavaScript doesn't override the padding on small screens */
     }
@@ -61,6 +156,12 @@ html,body,h1,h2,h3,h4 {
       float: none;
       display: block;
       text-align: left;
+      background-color: white;
+    color: black;
+    border-radius: 15px;
+    width: 90px;
+    height: 45px;
+    margin: 1px;
     }
     .navbar-right {
       float: none;
@@ -69,7 +170,7 @@ html,body,h1,h2,h3,h4 {
 html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}
 
 html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}
-article,aside,details,figure,footer,header,main,menu,section{display:block}summary{display:list-item}
+article,aside,details,figure,footer,main,menu,section{display:block}summary{display:list-item}
 audio,canvas,progress,video{display:inline-block}progress{vertical-align:baseline}
 audio:not([controls]){display:none;height:0}[hidden],template{display:none}
 abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}
@@ -130,7 +231,7 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 @media (min-width:601px){.mdc-col.m1{width:8.33333%}.mdc-col.m2{width:16.66666%}.mdc-col.m3,.mdc-quarter{width:24.99999%}.mdc-col.m4,.mdc-third{width:33.33333%}
 .mdc-col.m5{width:41.66666%}.mdc-col.m6,.mdc-half{width:49.99999%}.mdc-col.m7{width:58.33333%}.mdc-col.m8,.mdc-twothird{width:66.66666%}
 .mdc-col.m9,.mdc-threequarter{width:74.99999%}.mdc-col.m10{width:83.33333%}.mdc-col.m11{width:91.66666%}.mdc-col.m12{width:99.99999%}}
-@media (min-width:993px){.mdc-col.l1{width:8.33333%}.mdc-col.l2{width:16.66666%}.mdc-col.l3{width:25%}.mdc-col.l4{width:33.33333%}
+@media (min-width:993px){.mdc-col.l1{width:8.33333%}.mdc-col.l2{width:16.66666%}.mdc-col.l3{width:50%}.mdc-col.l4{width:33.33333%}
 .mdc-col.l5{width:41.66666%}.mdc-col.l6{width:49.99999%}.mdc-col.l7{width:58.33333%}.mdc-col.l8{width:66.66666%}
 .mdc-col.l9{width:74.99999%}.mdc-col.l10{width:83.33333%}.mdc-col.l11{width:91.66666%}.mdc-col.l12{width:99.99999%}}
 .mdc-rest{overflow:hidden}.mdc-stretch{margin-left:-16px;margin-right:-16px}
@@ -161,7 +262,7 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .mdc-circle{border-radius:50%}
 .mdc-round-small{border-radius:2px}.mdc-round,.mdc-round-medium{border-radius:4px}.mdc-round-large{border-radius:8px}.mdc-round-xlarge{border-radius:16px}.mdc-round-xxlarge{border-radius:32px}
 .mdc-row-padding,.mdc-row-padding>.mdc-half,.mdc-row-padding>.mdc-third,.mdc-row-padding>.mdc-twothird,.mdc-row-padding>.mdc-threequarter,.mdc-row-padding>.mdc-quarter,.mdc-row-padding>.mdc-col{padding:0 8px}
-.mdc-container,.mdc-panel{padding:0.01em 16px}.mdc-panel{margin-top:16px;margin-bottom:16px}
+.mdc-container,.mdc-panel{  padding:0.01em 16px}.mdc-panel{margin-top:16px;margin-bottom:16px}
 .mdc-code,.mdc-codespan{font-family:Consolas,"courier new";font-size:16px}
 .mdc-code{width:auto;background-color:#fff;padding:8px 12px;border-left:4px solid #4CAF50;word-wrap:break-word}
 .mdc-codespan{color:crimson;background-color:#f1f1f1;padding-left:4px;padding-right:4px;font-size:110%}
