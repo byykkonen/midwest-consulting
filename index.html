@@ -18,7 +18,7 @@
       <a  href="#">Home</a>
       <a href="#pricing">Pricing</a>
       <a href="#about">About</a>
-      <a href="#contact" >Contact</a>
+      <a href="#contact" >Free Consult</a>
     </div>
   </div>
   <h1 class="logo-h1">Midwest Dental Consulting </h1>
@@ -185,7 +185,7 @@
 
     <div class="mdc-third mdc-margin-bottom">
       <div class="mdc-card-4">
-        <img src="./images/female.jpg" alt="John" style="width:100%">
+        <img src="./images/female.jpg" alt="Dental Billing Professional " style="width:100%">
         <div class="mdc-container">
           <h3>Dedicated</h3>
           <p class="mdc-opacity">We are dedicated to you</p>
@@ -197,7 +197,7 @@
 
     <div class="mdc-third mdc-margin-bottom">
       <div class="mdc-card-4">
-        <img src="./images/Passion.jpg" alt="Mike" style="width:100%">
+        <img src="./images/Passion.jpg" alt="Passion sign" style="width:100%">
         <div class="mdc-container">
           <h3>Passionate</h3>
           <p class="mdc-opacity">We believe in this work</p>
@@ -209,7 +209,7 @@
 
     <div class="mdc-third mdc-margin-bottom">
       <div class="mdc-card-4" >
-        <img src="./images/Capture2.PNG" alt="Jane" style="width:100%; max-height: 230px; object-fit: cover;">
+        <img src="./images/Capture2.PNG" alt="Authentic Sign" style="width:100%; max-height: 230px; object-fit: cover;">
         <div class="mdc-container">
           <h3>Authentic</h3>
           <p class="mdc-opacity">We bring authenticty</p>
@@ -222,7 +222,7 @@
 
   <!-- Contact -->
   <div class="mdc-center mdc-padding-64" id="contact">
-    <span class="mdc-xlarge mdc-bottombar mdc-border-dark-grey mdc-padding-16">Contact Us</span>
+    <span class="mdc-xlarge mdc-bottombar mdc-border-dark-grey mdc-padding-16">Free Consultation</span>
   </div>
 
   <form class="mdc-container" action="https://formsubmit.co/f8bb97116566734dc49fef5aeceee690" method="POST" target="_blank">
@@ -243,6 +243,7 @@
       <input class="mdc-input mdc-border mdc-hover-border-black" style="width:100%;" name="Message" required>
     </div>
     <button type="submit" class="mdc-button mdc-block" style="background-color: #344e41; color: white;">Send</button>
+    
   </form>
 
 </div>
@@ -252,42 +253,9 @@
 <footer class="mdc-container mdc-padding-32 mdc-light-grey mdc-center">
   <h4>Midwest Dental Consulting</h4>
   <a href="#" class="mdc-button mdc-margin" style="background-color: #344e41; color: white;"><i class="fa fa-arrow-up mdc-margin-right"></i>To the top</a>
-    <p>Email: midwestdentalconsulting@gmail.com</p>
+    <p>Email: <a href="mailto:midwestdentalconsulting@gmail.com" style="text-decoration: none; color: black">midwestdentalconsulting@gmail.com</a></p>
     <p>Phone: 320-406-8184</p>
 </footer>
-
-
-<script>
-
-// Slideshow
-var slideIndex = 1;
-showDivs(slideIndex);
-
-function plusDivs(n) {
-  showDivs(slideIndex += n);
-}
-
-function currentDiv(n) {
-  showDivs(slideIndex = n);
-}
-
-function showDivs(n) {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("demodots");
-  if (n > x.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = x.length} ;
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" mdc-white", "");
-  }
-  x[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " mdc-white";
-}
-
-</script>
 
 </body>
 </html>
